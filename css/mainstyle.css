@@ -6,18 +6,11 @@ body {
   box-sizing: border-box;
 }
 
-/*COLOR PALETTE*/
-:root {
-  --primary: #9356DC;
-  --secondary: #FF79DA;
-  --tertiary: #99E2D0;
-}
-
 /*TYPOGRAPHY*/
 
 h1 {
   margin: 0;
-  font-size: 160%;
+  font-size: 130%;
   font-weight:bolder;
   line-height: 1;
 }
@@ -32,7 +25,7 @@ a {
   display: block;
   margin: auto;
   padding: 20px 0 10px 0;
-  width: 176px;
+  width: 170px;
  }
 
 /*WRAPPER*/
@@ -72,7 +65,7 @@ a {
 input::placeholder {
   font-weight:700;
   color: rgb(67, 66, 66);
-  font-size: 100%;
+  font-size: 90%;
 }
 
 .search-form__main {
@@ -86,7 +79,7 @@ h1 {
 }
 
 .search-form__text {
-  font-size: 110%;
+  font-size: 100%;
 }
 
 .search-form__text p {
@@ -94,23 +87,84 @@ h1 {
 } 
 
 .search-form__button {
-  margin-bottom: 55px;
-}
-
-.search-form__button {
   background-color: var(--primary);
-  background: linear-gradient(var(--secondary), var(--primary));
+  background: linear-gradient(#FF79DA, #9356DC);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px;
-  padding: 16px;
+  padding: 14px;
+  margin-bottom: 55px;
   border: none;
   border-radius: 40px;
   max-width: 65%;
   cursor: pointer;
 }
 
+.search-form__button a {
+  font-size: 90%;
+}
 
+/*HOWTO SECTION*/
+.howto h1 {
+  margin: 40px 0 45px 0;
+  padding: 0;
+}
 
+.howto h2 {
+  font-size: 90%;
+  margin-left: 15px;
+}
 
+.howto-steps-one__button,
+.howto-steps-two__button,
+.howto-steps-three__button {
+  background-color: rgb(248, 248, 248);
+  box-shadow: rgba(0, 0, 0, 0.15) 1px 5px 10px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  padding: 8px;
+  border: none;
+  border-radius: 15px;
+  width: 100%;
+  position: relative;
+  bottom: 18px;
+  cursor: pointer;
+}
+
+.howto-steps-one__text,
+.howto-steps-two__text,
+.howto-steps-three__text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  margin-left: 20px;
+}
+
+.howto-steps-three__button {
+  background: linear-gradient(to right,#ede2fb, #f5effa);
+}
+
+.fa-circle-1, 
+.fa-circle-2,
+.fa-circle-3 {
+  font-size: 22px;
+  color: #9356DC;
+  position: absolute;
+  z-index: 3;
+}
+
+.fa-circle-1 {
+  : 16px;
+}
+
+.fa-mobile-screen,
+.fa-list,
+.fa-store {
+  color: rgb(120, 118, 118);
+  margin: 0 10px;
+}
+
+.fa-store {
+  color: #9356DC;
+}
 
 @media screen and (min-width:768px) {
 
