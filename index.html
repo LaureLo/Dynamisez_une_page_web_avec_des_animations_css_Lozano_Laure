@@ -23,114 +23,119 @@
     </header>
 
     <!--MAIN-->
-    <main class="wrapper">
+    <main>
 
       <!--SEARCH SECTION-->
       <section class="search">
         <form class="search-form" method="POST" action="traitement.php">
-          <div class="search-form__address">
-            <i class="fa-solid fa-location-dot"></i>
-            <input class="search-form__address--input" type="search" required="required" placeholder="Paris, Belleville">
+          <div class="search-form__address-box">
+            <div class="search-form__address-text">
+              <i class="fa-solid fa-location-dot"></i>
+              <input class="search-form__address--input" type="search" required="required" placeholder="Paris, Belleville">
+            </div>
           </div>
-          <div class="search-form__text">
-            <h1>Réservez le menu qui vous convient</h1>
-            <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p> 
+          <div class="search-form__main">
+            <div class="search-form__text">
+              <h1>Réservez le menu qui vous convient</h1>
+              <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p> 
+            </div>
+            <button class="search-form__button" type="submit">
+              <span class="search-form__button-text"><a href="#restaurants">Explorer nos restaurants</a></span>
+            </button>
           </div>
-          <button class="search-form__button" type="submit">
-            <span class="search-form__button-text"><a href="#restaurants">Explorer nos restaurants</a></span>
-          </button>
         </form>
       </section>
 
-      <!--HOWTO SECTION-->
-      <section class="howto">
-        <h1>Fonctionnement</h1>
-        <div class="howto-steps">
-          <div class="howto-steps-one">
-            <span class="howto-steps-one__number relative">1
-              <button class="howto-steps-one__button absolute" type="submit">
-                <div class="howto-steps-one__text">
-                  <i class="fa-solid fa-mobile-screen"></i>
-                  <p>Choisissez votre restaurant</p>
-                </div>
-              </button>
-            </span>
+      <div class="wrapper">
+        <!--HOWTO SECTION-->
+        <section class="howto">
+          <h1>Fonctionnement</h1>
+          <div class="howto-steps">
+            <div class="howto-steps-one">
+              <span class="howto-steps-one__number relative">1
+                <button class="howto-steps-one__button absolute" type="submit">
+                  <div class="howto-steps-one__text">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <p>Choisissez votre restaurant</p>
+                  </div>
+                </button>
+              </span>
+            </div>
+            <div class="howto-steps-two">
+              <span class="howto-steps-two__number relative">2
+                <button class="howto-steps-two__button absolute" type="submit">
+                  <div class="howto-steps-two__text">
+                    <i class="fa-solid fa-list"></i>
+                    <p>Composez votre menu</p>
+                  </div>
+                </button>
+              </span>
+            </div>
+            <div class="howto-steps-three">
+              <span class="howto-steps-three__number relative">3
+                <button class="howto-steps-three__button absolute" type="submit">
+                  <div class="howto-steps-three__text">
+                    <i class="fa-solid fa-store"></i>
+                    <p>Dégustez au restaurant</p>
+                  </div>
+                </button>
+              </span>
+            </div>
           </div>
-          <div class="howto-steps-two">
-            <span class="howto-steps-two__number relative">2
-              <button class="howto-steps-two__button absolute" type="submit">
-                <div class="howto-steps-two__text">
-                  <i class="fa-solid fa-list"></i>
-                  <p>Composez votre menu</p>
-                </div>
-              </button>
-            </span>
-          </div>
-          <div class="howto-steps-three">
-            <span class="howto-steps-three__number relative">3
-              <button class="howto-steps-three__button absolute" type="submit">
-                <div class="howto-steps-three__text">
-                  <i class="fa-solid fa-store"></i>
-                  <p>Dégustez au restaurant</p>
-                </div>
-              </button>
-            </span>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <!--RESTAURANTS SECTION-->
-      <section class="restaurants" id="restaurants">
-        <h1>Restaurants</h1>
-        <div class="restaurants-container">
-          <article class="restaurants-card">
-            <a href="menu1.html">
-              <div class="restaurants-card__image relative">
-                <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Assiette gastronomique du restaurant à La palette du goût"/>
-                <p class="restaurants-card__new absolute">Nouveau</p>
-              </div>
-              <div class="restaurants-card__content relative">
-                <h2>La palette du goût</h2>
-                <p>Ménilmontant</p>
+        <!--RESTAURANTS SECTION-->
+        <section class="restaurants" id="restaurants">
+          <h1>Restaurants</h1>
+          <div class="restaurants-container">
+            <article class="restaurants-card">
+              <a href="menu1.html">
+                <div class="restaurants-card__image relative">
+                  <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Assiette gastronomique du restaurant à La palette du goût"/>
+                  <p class="restaurants-card__new absolute">Nouveau</p>
+                </div>
+                <div class="restaurants-card__content relative">
+                  <h2>La palette du goût</h2>
+                  <p>Ménilmontant</p>
+                  <i class="fa-regular fa-heart absolute"></i>
+                </div>
+              </a> 
+            </article>
+            <article class="restaurants-card">
+              <a href="menu2.html">
+                <div class="restaurants-card__image relative"></div>
+                  <img class=restaurants-card__image src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Assiette gastronomique du restaurant La note enchantée photographiée du dessus"/>
+                  <p class="restaurants-card__new absolute">Nouveau</p>
+                <div class="restaurants-card__content relative">
+                  <h2>La note enchantée</h2>
+                  <p>Charonne</p>
+                  <i class="fa-regular fa-heart absolute"></i>
+                </div>
+              </a>
+            </article>
+            <article class="restaurants-card">
+              <a href="menu3.html">
+                <img class=restaurants-card__image src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Assiette gastronomique du restaurant À la française"/>
+                <div class="restaurants-card__content relative">
+                  <h2>À la française</h2>
+                  <p>Cité Rouge</p>
+                </div>
                 <i class="fa-regular fa-heart absolute"></i>
-              </div>
-            </a> 
-          </article>
-          <article class="restaurants-card">
-            <a href="menu2.html">
-              <div class="restaurants-card__image relative"></div>
-                <img class=restaurants-card__image src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Assiette gastronomique du restaurant La note enchantée photographiée du dessus"/>
-                <p class="restaurants-card__new absolute">Nouveau</p>
-              <div class="restaurants-card__content relative">
-                <h2>La note enchantée</h2>
-                <p>Charonne</p>
+              </a> 
+            </article>
+            <article class="restaurants-card">
+              <a href="menu4.html">
+                <img class=restaurants-card__image src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Assiette gastronomique au design moderne du restaurant Le délice des sens"/>
+                <div class="restaurants-card__content relative">
+                  <h2>Le délice des sens</h2>
+                  <p>Folie-Méricourt</p>
+                </div>
                 <i class="fa-regular fa-heart absolute"></i>
-              </div>
-            </a>
-          </article>
-          <article class="restaurants-card">
-            <a href="menu3.html">
-              <img class=restaurants-card__image src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Assiette gastronomique du restaurant À la française"/>
-              <div class="restaurants-card__content relative">
-                <h2>À la française</h2>
-                <p>Cité Rouge</p>
-              </div>
-              <i class="fa-regular fa-heart absolute"></i>
-            </a> 
-          </article>
-          <article class="restaurants-card">
-            <a href="menu4.html">
-              <img class=restaurants-card__image src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Assiette gastronomique au design moderne du restaurant Le délice des sens"/>
-              <div class="restaurants-card__content relative">
-                <h2>Le délice des sens</h2>
-                <p>Folie-Méricourt</p>
-              </div>
-              <i class="fa-regular fa-heart absolute"></i>
-            </a> 
-          </article>
-        </div>
-      </section>
-
+              </a> 
+            </article>
+          </div>
+        </section>
+      </div>
     </main>
 
     <!--FOOTER-->
