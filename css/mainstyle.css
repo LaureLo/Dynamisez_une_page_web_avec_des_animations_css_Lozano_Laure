@@ -6,6 +6,83 @@ body {
   box-sizing: border-box;
 }
 
+/*LOADER*/
+.loader {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: loader 1s ease-in-out 3s forwards;
+}
+
+.loader__letters {
+  margin-bottom: 70px;
+}
+
+.letter {
+  text-align: center;
+  letter-spacing: 4px;
+  margin-bottom: 70px;
+  font-size: 240%;
+  font-family: 'Shrikhand', sans-serif;
+  color: #fff;
+  animation: flash 1.4s linear infinite;
+}
+
+@keyframes flash {
+  0% {
+    color: rgb(189, 153, 234);
+    text-shadow: 0 0 6px rgb(189, 153, 234);
+  }
+  90% {
+    color: #fff;
+    text-shadow: none;
+  }
+  100% {
+    color:rgb(189, 153, 234);
+    text-shadow: 0 0 6px rgb(189, 153, 234);
+  }
+}
+
+.loader__pulse {
+  width: 72px;
+  height: 72px;
+  color: #9356dc;
+  background: radial-gradient(circle at 60% 65%, currentColor 62%, #0000 65%) top left,
+        radial-gradient(circle at 40% 65%, currentColor 62%, #0000 65%) top right,
+        linear-gradient(to bottom left, currentColor 42%,#0000 43%) bottom left ,
+        linear-gradient(to bottom right,currentColor 42%,#0000 43%) bottom right;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  animation: loader 1s ease-in-out 3s forwards;
+}
+
+.loader__pulse:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  opacity: 0.4;
+  animation: pl3 1.2s infinite;
+}
+
+@keyframes pl3 {
+  to {
+     transform: scale(1.8);
+     opacity: 0;
+  }
+}
+
+@media screen and (min-width:768px) {
+
+}
+
 /*TYPOGRAPHY*/
 
 h1 {
@@ -272,14 +349,15 @@ h1 {
 }
 
 .fill:hover {
-  animation: fill 1.5s ease-in-out;
   display: inline-block;
   opacity: 1;
   background: linear-gradient(to top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   background: -webkit-linear-gradient(to top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+  animation: fill 1.5s ease-in-out;
 }
 
 @keyframes fill {
@@ -336,79 +414,19 @@ footer a:hover {
   color:#99E2D0 ;
 }
 
-/*LOADER*/
-.loader {
-  position: fixed;
-  z-index: 9999;
-  width: 100%;
-  height: 100%;
-  background: #000;
+/*MENU PAGES*/
+
+.header {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  animation: loader 1s ease-in-out 3s forwards;
 }
 
-.loader__letters {
-  margin-bottom: 70px;
-}
-
-.letter {
-  text-align: center;
-  letter-spacing: 4px;
-  margin-bottom: 70px;
-  font-size: 240%;
-  font-family: 'Shrikhand', sans-serif;
-  color: #fff;
-  animation: flash 1.4s linear infinite;
-}
-
-@keyframes flash {
-  0% {
-    color: rgb(189, 153, 234);
-    text-shadow: 0 0 6px rgb(189, 153, 234);
-  }
-  90% {
-    color: #fff;
-    text-shadow: none;
-  }
-  100% {
-    color:rgb(189, 153, 234);
-    text-shadow: 0 0 6px rgb(189, 153, 234);
-  }
-}
-
-.loader__pulse {
-  width: 72px;
-  height: 72px;
-  color: #9356dc;
-  background: radial-gradient(circle at 60% 65%, currentColor 62%, #0000 65%) top left,
-        radial-gradient(circle at 40% 65%, currentColor 62%, #0000 65%) top right,
-        linear-gradient(to bottom left, currentColor 42%,#0000 43%) bottom left ,
-        linear-gradient(to bottom right,currentColor 42%,#0000 43%) bottom right;
-  background-size: 50% 50%;
-  background-repeat: no-repeat;
-  position: relative;
-  animation: loader 1s ease-in-out 3s forwards;
-}
-
-.loader__pulse:after {
-  content: "";
+.fa-arrow-left {
   position: absolute;
-  inset: 0;
-  background: inherit;
-  opacity: 0.4;
-  animation: pl3 1.2s infinite;
+  top: 20px;
+  left: 20px;
+  color: black;
+  font-size: 130%;
 }
 
-@keyframes pl3 {
-  to {
-     transform: scale(1.8);
-     opacity: 0;
-  }
-}
-
-@media screen and (min-width:768px) {
-
-}
