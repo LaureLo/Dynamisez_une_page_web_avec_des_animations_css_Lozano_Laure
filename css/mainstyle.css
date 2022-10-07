@@ -6,32 +6,37 @@ body {
   box-sizing: border-box;
 }
 
-/*LOADER*/
-.loader {
-  position: fixed;
-  z-index: 9999;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  animation: loader 1s ease-in-out 3s forwards;
+/*KEYFRAMES*/
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.loader__letters {
-  margin-bottom: 70px;
-}
+@keyframes fill {
+  0% {
+    opacity: 0;
+  }
 
-.letter {
-  text-align: center;
-  letter-spacing: 4px;
-  margin-bottom: 70px;
-  font-size: 240%;
-  font-family: 'Shrikhand', sans-serif;
-  color: #fff;
-  animation: flash 1.4s linear infinite;
+  20% {
+    opacity: 0.2;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  70% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes flash {
@@ -47,6 +52,54 @@ body {
     color:rgb(189, 153, 234);
     text-shadow: 0 0 6px rgb(189, 153, 234);
   }
+}
+
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes pl3 {
+  to {
+     transform: scale(1.8);
+     opacity: 0;
+  }
+}
+
+/*LOADER*/
+.loader {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  animation: loader 1s ease-in-out 3s forwards;
+}
+
+.loader__letters {
+  margin-bottom: 70px;
+}
+
+.letter {
+  text-align: center;
+  letter-spacing: 4px;
+  margin-bottom: 70px;
+  font-size: 240%;
+  font-family: 'Shrikhand', sans-serif;
+  color: #fff;
+  animation: flash 1.4s linear infinite;
 }
 
 .loader__pulse {
@@ -70,25 +123,6 @@ body {
   background: inherit;
   opacity: 0.4;
   animation: pl3 1.2s infinite;
-}
-
-@keyframes pl3 {
-  to {
-     transform: scale(1.8);
-     opacity: 0;
-  }
-}
-
-@keyframes loader {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 0;
-  }
 }
 
 /*TYPOGRAPHY*/
@@ -139,7 +173,7 @@ a {
 
 .search-form__address--input {
   border: transparent;
-  background-color: rgb(240, 239, 239);
+  background-color: rgb(238, 238, 238);
   margin-left: 15px;
 }
 
@@ -198,66 +232,66 @@ h1 {
   padding: 0;
 }
 
-.howto h2 {
-  font-size: 100%;
-  margin-left: 15px;
+.howto__steps {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
 }
 
-.howto-steps-one__button,
-.howto-steps-two__button,
-.howto-steps-three__button {
-  background-color: rgb(248, 248, 248);
-  box-shadow: rgba(0, 0, 0, 0.15) 1px 5px 10px;
+.howto__steps {
+  padding: 0 0 0 10px;
+}
+
+.howto__steps li {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
   margin-left: 10px;
   margin-bottom: 20px;
   padding: 8px;
   border: none;
   border-radius: 15px;
-  width: 95%;
+  width: 100%;
   position: relative;
   bottom: 18px;
+  background-color: rgb(248, 248, 248);
+  box-shadow: rgba(0, 0, 0, 0.15) 1px 5px 10px;
   cursor: pointer;
 }
+.howto__steps li p {
+  font-weight: 900;
+  margin-left: 15px;
+}
 
-.howto-steps-one__button:hover,
-.howto-steps-two__button:hover,
-.howto-steps-three__button:hover {
+.howto__steps li:hover {
   background: linear-gradient(to right,#ede2fb, #f5effa);
   box-shadow: rgba(0, 0, 0, 0.20) 2px 10px 15px;
 }
 
-.howto-steps-one__text:hover i,
-.howto-steps-two__text:hover i {
-  color: #9356DC;
-}
-
-.howto-steps-one__text,
-.howto-steps-two__text,
-.howto-steps-three__text {
-  display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
-  margin-left: 20px;
-}
-
-.howto-steps-three__button {
+.howto__steps li:last-child{
   background: linear-gradient(to right,#ede2fb, #f5effa);
 }
 
-.fa-circle-1, 
-.fa-circle-2,
-.fa-circle-3 {
-  font-size: 22px;
-  color: #9356DC;
-  position: absolute;
-  z-index: 3;
+.howto__steps li:hover .fas {
+  color: #9356dc;
+}
+.howto__steps--number {
+  background-color: #9356dc;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 9px;
+  margin-left: -25px;
 }
 
-.fa-mobile-screen,
-.fa-list,
-.fa-store {
+.howto__steps--icon {
   color: rgb(120, 118, 118);
-  margin: 0 10px;
+  font-size: 1.2rem;
+  margin-left: 20px;
 }
 
 .fa-store {
@@ -267,7 +301,7 @@ h1 {
 /*RESTAURANTS SECTION*/
 .restaurants {
   padding: 40px 0 40px 0;
-  background-color: rgb(238, 238, 238);
+  background-color: rgb(248, 248, 248);
 }
 
 .restaurants-card {
@@ -385,6 +419,7 @@ footer a:hover {
   color:#99E2D0 ;
 }
 
+
 /*MENU PAGES*/
 
 .header {
@@ -408,7 +443,7 @@ footer a:hover {
 }
 
 .menu-container {
-  background-color: rgb(238, 238, 238);
+  background-color: rgb(248, 248, 248);
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
   width: 100%;
@@ -447,28 +482,6 @@ footer a:hover {
   -webkit-text-fill-color: transparent;
   font-weight: bold;
   animation: fill 1.5s ease-in-out;
-}
-
-@keyframes fill {
-  0% {
-    opacity: 0;
-  }
-
-  20% {
-    opacity: 0.2;
-  }
-
-  50% {
-    opacity: 0.5;
-  }
-
-  70% {
-    opacity: 0.7;
-  }
-
-  100% {
-    opacity: 1;
-  }
 }
 
 .menu-container h2 {
@@ -599,7 +612,7 @@ footer a:hover {
 .btn__order {
   display: flex;
   justify-content: center;
-  background-color: rgb(238, 238, 238);
+  background-color: rgb(248, 248, 248);
 }
 
 .btn__order button {
