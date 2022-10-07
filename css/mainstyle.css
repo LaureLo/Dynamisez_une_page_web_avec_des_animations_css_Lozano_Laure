@@ -183,7 +183,8 @@ h1 {
   box-shadow: rgba(0, 0, 0, 0.30) 0px 10px 15px;
 }
 
-.search-form__button a {
+.search-form__button-text {
+  color: #fff;
   font-size: 90%;
 }
 
