@@ -514,7 +514,7 @@ footer a:hover {
 }
 
 .menu-maindish {
-  animation: fadein 6s ease-in-out;
+  animation: fadein 7s ease-in-out;
 }
 
 @media screen and (min-width: 1280px) {
@@ -524,7 +524,7 @@ footer a:hover {
 }
 
 .menu-dessert {
-  animation: fadein 9s ease-in-out;
+  animation: fadein 10s ease-in-out;
 }
 
 @media screen and (min-width: 1280px) {
