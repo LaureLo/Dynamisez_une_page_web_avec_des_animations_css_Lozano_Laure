@@ -151,7 +151,7 @@ a {
 .wrapper {
   margin: 0 auto;
   padding: 0 10px;
-  max-width: 650px; 
+  max-width: 800px; 
 }
 
 /*SEARCH SECTION*/
@@ -442,6 +442,12 @@ footer a:hover {
   height: 250px;
 }
 
+.menu-wrapper {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 800px; 
+}
+
 .menu-container {
   background-color: rgb(248, 248, 248);
   border-top-left-radius: 35px;
@@ -451,20 +457,24 @@ footer a:hover {
   margin: -45px auto 0 auto;
 }
 
+.menu-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px;
+}
+
 .menu-title h1 {
   font-family: 'Shrikhand', sans-serif;
   margin-left: 20px;
-  font-size: 160%;
+  font-size: 150%;
   letter-spacing: 1px;
   position: relative;
   padding-bottom: 0;
 }
 
 .menu-title .fa-heart {
-  position: absolute;
-  right: 32px;
-  top: 35px;
-  font-size: 22px;
+  font-size: 130%;
 }
 
 .fill {
@@ -499,38 +509,16 @@ footer a:hover {
   margin-left: 20px;
 }
 
-.menu-wrapper a {
-  color: black;
-}
-
 .menu-appetizer {
   animation: fadein 3s ease-in-out;
-}
-
-@media screen and (min-width: 1280px) {
-  .menu-appetizer {
-    width: 400px;
-  }
 }
 
 .menu-maindish {
   animation: fadein 7s ease-in-out;
 }
 
-@media screen and (min-width: 1280px) {
-  .menu-maindish {
-    width: 400px;
-  }
-}
-
 .menu-dessert {
   animation: fadein 10s ease-in-out;
-}
-
-@media screen and (min-width: 1280px) {
-  .menu-dessert {
-    width: 400px;
-  }
 }
 
 .cross {
@@ -619,13 +607,13 @@ footer a:hover {
   background: linear-gradient(#FF79DA, #9356DC);
   border: none;
   border-radius: 30px;
-  padding: 10px 5px;
+  padding: 12px 45px;
   color: #fff;
+  font-size: 90%;
   font-weight: 400;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px;
   cursor: pointer;
-  margin: 40px 0 60px 0;
-  padding: 12px;
+  margin: 40px 0 60px 0; 
   max-width: 75%;
 }
 
@@ -635,15 +623,110 @@ footer a:hover {
   box-shadow: rgba(0, 0, 0, 0.30) 0px 10px 15px;
 }
 
-.btn__order button  {
-  font-size: 90%;
-  padding: 12px 45px;
-}
+
+/*MEDIA QUERIES - TABLET AND DESKTOP*/
 
 @media screen and (min-width: 768px) {
 
-}
+  .logo__image {
+    width: 20%;
+    height: auto;
+  }
 
-@media screen and (min-width: 1280px) {
+  .search-form__address-text i {
+    font-size: 120%;
+  }
+
+  input::placeholder {
+    font-size: 120%;
+  }
+
+  .search-form__button-text {
+    font-size: 110%;
+  }
+
+  .howto__steps li i {
+   padding-left: 20px;
+  }
+
+  .howto__steps li p {
+    font-size: 140%;
+  }
+
+  .howto__steps--icon {
+    font-size: 140%;
+  }
+
+  h1 {
+    font-size: 180%;
+  }
+
+  .menu-title h1 {
+    font-size: 180%;
+  }
+
+  .menu-title .fa-heart {
+    font-size: 190%;
+  }
+
+  .menu-container h2 {
+    font-size: 130%;
+  }
+
+  p {
+    font-size: 130%;
+  }
+
+  .restaurants-card__text h2 {
+    font-size: 140%;
+  }
+  
+  .restaurants-card__text p {
+    font-size: 120%;
+  }
+
+  .restaurants-card__heart i {
+    font-size: 140%;
+  }
+
+  .restaurants-card__new {
+    font-size: 90%;
+    right: 10px;
+    top: 10px;
+    z-index: 4;
+  }
+
+  .meals h3 {
+    font-size: 140%;
+  }
+
+  .last__line p {
+    font-size: 115%;
+  }
+
+  .price {
+    font-size: 115%;
+  }
+
+  .btn__order button {
+    font-size: 130%;
+  }
+
+  footer {
+    text-align: center;
+    }
+
+  footer p {
+    font-size: 120%;
+    padding-left: 0;
+  }
+
+  footer ul {
+    padding-left: 0;
+  }
+
+  footer a {
+    font-size: 90%;
+  }
 
 }
