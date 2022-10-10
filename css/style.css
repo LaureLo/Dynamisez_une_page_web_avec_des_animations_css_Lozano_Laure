@@ -646,20 +646,20 @@ footer a:hover {
 @media screen and (min-width: 768px) {
 
   .logo__image {
-    width: 20%;
+    width: 15%;
     height: auto;
   }
 
   .search-form__address-text i {
-    font-size: 120%;
+    font-size: 110%;
   }
 
   input::placeholder {
-    font-size: 120%;
+    font-size: 110%;
   }
 
   .search-form__button-text {
-    font-size: 110%;
+    font-size: 90%;
   }
 
   .howto__steps li i {
@@ -667,19 +667,19 @@ footer a:hover {
   }
 
   .howto__steps li p {
-    font-size: 140%;
+    font-size: 130%;
   }
 
   .howto__steps--icon {
-    font-size: 140%;
+    font-size: 130%;
   }
 
   h1 {
-    font-size: 180%;
+    font-size: 170%;
   }
 
   .menu-title h1 {
-    font-size: 180%;
+    font-size: 170%;
   }
 
   .line {
@@ -689,15 +689,15 @@ footer a:hover {
   }
 
   .menu-title .fa-heart {
-    font-size: 190%;
+    font-size: 180%;
   }
 
   .menu-container h2 {
-    font-size: 130%;
+    font-size: 120%;
   }
 
   p {
-    font-size: 130%;
+    font-size: 120%;
   }
 
   .restaurants-card {
@@ -705,30 +705,30 @@ footer a:hover {
   }  
 
   .restaurants-card__text h2 {
-    font-size: 140%;
+    font-size: 130%;
   }
   
   .restaurants-card__text p {
-    font-size: 120%;
+    font-size: 110%;
   }
 
   .restaurants-card__heart i {
-    font-size: 140%;
+    font-size: 130%;
   }
 
   .restaurants-card__new {
-    font-size: 90%;
+    font-size: 80%;
     right: 10px;
     top: 10px;
     z-index: 4;
   }
 
   .meals h3 {
-    font-size: 140%;
+    font-size: 130%;
   }
 
   .last__line p {
-    font-size: 115%;
+    font-size: 110%;
   }
 
   .price {
@@ -736,7 +736,7 @@ footer a:hover {
   }
 
   .btn__order button {
-    font-size: 130%;
+    font-size: 125%;
   }
 
   footer {
