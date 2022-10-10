@@ -396,11 +396,6 @@ h1 {
   z-index: 10;
 }
 
-.heart .fa-heart {
-  color:black;
-  font-size: 18px;
-}
-
 /*FOOTER*/
 
 footer {
@@ -678,6 +673,26 @@ footer a:hover {
     font-size: 170%;
   }
 
+  .restaurants-card {
+    margin: 0 0 20px 0;
+  }  
+
+  .restaurants-card__text h2 {
+    font-size: 130%;
+  }
+  
+  .restaurants-card__text p {
+    font-size: 110%;
+  }
+
+  .restaurants-card__new {
+    font-size: 80%;
+  }
+
+  .heart .fa-heart  {
+    font-size: 130%;
+  }
+
   .menu-title h1 {
     font-size: 170%;
   }
@@ -689,7 +704,7 @@ footer a:hover {
   }
 
   .menu-title .fa-heart {
-    font-size: 180%;
+    font-size: 140%;
   }
 
   .menu-container h2 {
@@ -712,12 +727,12 @@ footer a:hover {
     font-size: 110%;
   }
 
-  .restaurants-card__heart i {
-    font-size: 130%;
-  }
-
   .restaurants-card__new {
     font-size: 80%;
+  }
+
+  .heart .fa-heart  {
+    font-size: 130%;
   }
 
   .meals h3 {
