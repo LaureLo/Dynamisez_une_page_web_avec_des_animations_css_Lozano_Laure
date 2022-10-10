@@ -334,6 +334,7 @@ h1 {
   margin: 0 0 15px 0;
   padding: 0;
   overflow: hidden;
+  position: relative;
 }
 
 .restaurants-card:hover {
@@ -355,10 +356,17 @@ h1 {
   transition: 0.5s;
 }
 
-.restaurants-card__content {
-  display: flex;
-  justify-content:space-between;
-  align-items: center;
+.restaurants-card__new {
+  color: rgb(28, 155, 123);
+  background-color: #99E2D0;
+  border: none;
+  padding: 5px 10px;
+  font-size: 70%;
+  font-weight: 900;
+  position: absolute;
+  right: 25px;
+  top: 10px;
+  z-index: 10;
 }
 
 .restaurants-card__text {
@@ -381,24 +389,14 @@ h1 {
   font-size: 100%;
 }
 
-.restaurants-card__new {
-  color: rgb(28, 155, 123);
-  background-color: #99E2D0;
-  border: none;
-  padding: 5px 10px;
-  font-size: 70%;
-  font-weight: 900;
+.heart i {
   position: absolute;
-  right: 10px;
-  top: 10px;
-  z-index: 4;
+  right: 25px;
+  bottom: 30px;
+  z-index: 10;
 }
 
-.restaurants-card__heart i {
-  margin-right: 20px;
-}
-
-.fa-heart {
+.heart .fa-heart {
   color:black;
   font-size: 18px;
 }
@@ -496,12 +494,14 @@ footer a:hover {
   font-size: 130%;
 }
 
-.fill {
+.fill,
+.heart .fill {
   color: black;
   cursor: pointer;
 }
 
-.fill:hover {
+.fill:hover,
+.heart .fill:hover {
   display: inline-block;
   opacity: 1;
   background: linear-gradient(to top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
@@ -718,9 +718,6 @@ footer a:hover {
 
   .restaurants-card__new {
     font-size: 80%;
-    right: 10px;
-    top: 10px;
-    z-index: 4;
   }
 
   .meals h3 {
