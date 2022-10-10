@@ -591,11 +591,6 @@ footer a:hover {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-@media screen and (min-width: 1280px) {
-  .last__line p {
-    padding-right: 20px;
-  }
-}
 
 .last__line span {
   margin-right: 5px;
@@ -631,7 +626,6 @@ footer a:hover {
 
 .btn__order button:hover {
   background: linear-gradient(#fe9be2, #a370e2);
-  background-blend-mode: lighten;
   box-shadow: rgba(0, 0, 0, 0.30) 0px 10px 15px;
 }
 
