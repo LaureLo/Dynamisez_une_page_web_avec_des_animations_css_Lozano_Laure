@@ -24,7 +24,6 @@ body {
   10% {
     opacity: 0.1;
   }
-
   20% {
     opacity: 0.2;
   }
@@ -34,14 +33,12 @@ body {
   40% {
     opacity: 0.4;
   }
-
   50% {
     opacity: 0.5;
   }
   60% {
     opacity: 0.6;
   }
-
   70% {
     opacity: 0.7;
   }
