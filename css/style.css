@@ -566,6 +566,7 @@ footer a:hover {
   padding: 10px;
   position: relative;
   cursor: pointer;
+  overflow: hidden;
   transition: padding-right 450ms ease-in-out;
 }
 
