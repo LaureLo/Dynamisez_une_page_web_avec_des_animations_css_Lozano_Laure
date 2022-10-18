@@ -546,12 +546,13 @@ footer a:hover {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   position: absolute;
-  padding: 20px;
+  padding: 20px 20px 16px 20px;
   right: -40px;
   top: 0;
   opacity: 0;
   transition: transform 330ms ease-in-out;
 }
+
 .cross .fa-check-circle {
   color: #fff;
   transition: transform 500ms ease-in-out;
@@ -576,6 +577,10 @@ footer a:hover {
 .meals:hover .cross {
   opacity: 1;
   transform: translate(-35px);
+}
+
+.meals:hover .cross .fa-check-circle {
+  transform: rotate(360deg);
 }
 
 .last__line {
@@ -745,6 +750,10 @@ h3 {
 
   .price {
     font-size: 115%;
+  }
+
+  .cross{
+    padding: 20px 20px 18px 20px;
   }
 
   .btn__order button {
